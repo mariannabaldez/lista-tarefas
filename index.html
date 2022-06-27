@@ -5,14 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lista de tarefas</title>
+
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <h1>Lista de Tarefas</h1>
     <div class="container">
-        <form class="adicionar-tarefa">
-            <input type="text" class="tarefa" placeholder="Escreva sua tarefa">
+        <form class="form">
+            <input class="task-input" type="text" placeholder="Escreva sua tarefa">
+            <button type="submit" class="add-button">Adicionar</button>
         </form>
-        <button class="button">Adicionar</button>
+        <div class="introduce-tasks">
+            <ul class="tasks-list">
+                <li>
+                    <span class="tasks">Tarefa 1</span>
+                    <div>
+                        <button class="action-button" id="edit-button">
+                            <i class="fa fa-pencil"></i>
+                        </button>
+                        <button class="action-button" id="delete-button">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
