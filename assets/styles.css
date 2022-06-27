@@ -1,0 +1,102 @@
+* {
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+
+  body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(108, 108, 108);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(56, 56, 56);
+    border: 0,8px solid rgb(143, 255, 73);
+    border-radius: 12px;
+    padding: 55px;
+  }
+
+  h1 {
+    font-size: large;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: rgb(56, 56, 56);
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+
+  .task-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: 1px solid rgb(21, 21, 21);
+    background-color: rgb(27, 27, 27);
+    color: rgb(208, 208, 208);
+  }
+
+  .add-button {
+    width: 100px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: 1px solid rgb(21, 21, 21);
+    background-color: rgb(27, 27, 27);
+    color: rgb(117, 117, 117);
+  }
+
+  .add-button :hover {
+    border: 1.5px solid rgb(143, 255, 73);
+    cursor: pointer;
+  }
+
+  .tasks-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tasks-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: 1px solid rgb(21, 21, 21);
+    background-color: rgb(27, 27, 27);
+    color: rgb(131, 131, 131);
+  }
+
+  .action-button {
+    border-radius: 20px;
+    border: 1px solid rgb(21, 21, 21);
+    background-color: rgb(59, 59, 59);;
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+  #edit-button :hover {
+    border: 2px solid rgb(69, 171, 255);
+    cursor: pointer;
+  }
+
+  #delete-button :hover {
+    border: 2px solid rgb(255, 58, 58);
+    cursor: pointer;
+  }
