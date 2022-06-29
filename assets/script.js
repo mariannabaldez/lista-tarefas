@@ -16,11 +16,13 @@ inputNovaTarefa.addEventListener('keypress', (e) => {
 	}
 })
 
-buttonAdicionaTarefa.addEventListener('click', (e) => {
+buttonAdicionaTarefa.addEventListener(
+	'click', (e) => {
 	let tarefa = {
 		nome: inputNovaTarefa.value,
 		id: gerarId(),
 	}
+	e.preventDefault()
 	adicionarTarefa(tarefa);
 })
 
